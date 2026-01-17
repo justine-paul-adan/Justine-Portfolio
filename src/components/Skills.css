@@ -82,3 +82,113 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Phone (max 480px) */
+@media (max-width: 480px) {
+  .skills {
+    padding: 40px 1rem;
+  }
+
+  .skills h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .skills-grid {
+    gap: 1.5rem;
+  }
+
+  .skill-category {
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+
+  .skill-category h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .skill-category li {
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet (481px - 768px) */
+@media (481px) and (max-width: 768px) {
+  .skills {
+    padding: 50px 1.5rem;
+  }
+
+  .skills h2 {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .skill-category {
+    padding: 2rem;
+  }
+
+  .skill-category h3 {
+    font-size: 1.3rem;
+  }
+
+  .skill-category li {
+    padding: 0.6rem 0;
+  }
+}
+
+/* Laptop (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .skills {
+    padding: 80px 2rem;
+  }
+
+  .skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .skill-category {
+    padding: 2rem;
+  }
+
+  .skill-category h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Desktop/PC (1025px and above) */
+@media (min-width: 1025px) {
+  .skills {
+    padding: 100px 2rem;
+  }
+
+  .skills h2 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+  }
+
+  .skill-category {
+    padding: 2.5rem;
+  }
+
+  .skill-category h3 {
+    font-size: 1.5rem;
+  }
+}

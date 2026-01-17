@@ -163,3 +163,154 @@
     max-width: 300px;
   }
 }
+
+/* Phone (max 480px) */
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 1rem;
+    min-height: auto;
+  }
+
+  .hero-container {
+    gap: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .profile-img {
+    max-width: 200px;
+  }
+
+  .hero::before {
+    width: 300px;
+    height: 300px;
+    right: -20%;
+  }
+}
+
+/* Tablet (481px - 768px) */
+@media (481px) and (max-width: 768px) {
+  .hero {
+    padding: 50px 1.5rem;
+    min-height: auto;
+  }
+
+  .hero-container {
+    gap: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .cta-button {
+    padding: 0.85rem 2rem;
+    font-size: 0.95rem;
+  }
+
+  .profile-img {
+    max-width: 280px;
+  }
+
+  .hero::before {
+    width: 400px;
+    height: 400px;
+    right: -15%;
+  }
+}
+
+/* Laptop (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    padding: 100px 2rem;
+    min-height: 600px;
+  }
+
+  .hero-container {
+    gap: 2.5rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .tagline {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 1.05rem;
+  }
+
+  .profile-img {
+    max-width: 350px;
+  }
+
+  .hero::before {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+/* Desktop/PC (1025px and above) */
+@media (min-width: 1025px) {
+  .hero {
+    padding: 120px 2rem;
+    min-height: 650px;
+  }
+
+  .hero-container {
+    gap: 3rem;
+    max-width: 1200px;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1.15rem;
+  }
+
+  .profile-img {
+    max-width: 400px;
+  }
+
+  .hero::before {
+    width: 500px;
+    height: 500px;
+  }
+}

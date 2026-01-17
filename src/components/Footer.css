@@ -14,3 +14,51 @@
 .footer-content p:last-child {
   color: #646cff;
 }
+
+/* Phone (max 480px) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.25rem;
+  }
+
+  .footer-content p {
+    margin: 0.4rem 0;
+    font-size: 0.8rem;
+  }
+}
+
+/* Tablet (481px - 768px) */
+@media (481px) and (max-width: 768px) {
+  .footer {
+    padding: 1.5rem;
+  }
+
+  .footer-content p {
+    margin: 0.45rem 0;
+    font-size: 0.85rem;
+  }
+}
+
+/* Laptop (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    padding: 1.75rem;
+  }
+
+  .footer-content p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+}
+
+/* Desktop/PC (1025px and above) */
+@media (min-width: 1025px) {
+  .footer {
+    padding: 2rem;
+  }
+
+  .footer-content p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+}

@@ -3,6 +3,7 @@ import './Header.css'
 
 function Header() {
   const [activeLink, setActiveLink] = useState('home')
+  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,16 +25,29 @@ function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const handleLinkClick = () => {
+    setMenuOpen(false)
+  }
+
   return (
     <header className="header">
       <nav className="navbar">
         <div className="logo">Justine</div>
-        <ul className="nav-links">
-          <li><a href="#home" className={activeLink === 'home' ? 'active' : ''}>Home</a></li>
-          <li><a href="#about" className={activeLink === 'about' ? 'active' : ''}>About</a></li>
-          <li><a href="#skills" className={activeLink === 'skills' ? 'active' : ''}>Skills</a></li>
-          <li><a href="#projects" className={activeLink === 'projects' ? 'active' : ''}>Projects</a></li>
-          <li><a href="#contact" className={activeLink === 'contact' ? 'active' : ''}>Contact</a></li>
+        <button 
+          className={`hamburger ${menuOpen ? 'active' : ''}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
+          <li><a href="#home" className={activeLink === 'home' ? 'active' : ''} onClick={handleLinkClick}>Home</a></li>
+          <li><a href="#about" className={activeLink === 'about' ? 'active' : ''} onClick={handleLinkClick}>About</a></li>
+          <li><a href="#skills" className={activeLink === 'skills' ? 'active' : ''} onClick={handleLinkClick}>Skills</a></li>
+          <li><a href="#projects" className={activeLink === 'projects' ? 'active' : ''} onClick={handleLinkClick}>Projects</a></li>
+          <li><a href="#contact" className={activeLink === 'contact' ? 'active' : ''} onClick={handleLinkClick}>Contact</a></li>
         </ul>
       </nav>
     </header>

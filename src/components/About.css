@@ -90,3 +90,131 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Phone (max 480px) */
+@media (max-width: 480px) {
+  .about {
+    padding: 40px 1rem;
+  }
+
+  .about h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-content {
+    gap: 1.5rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .about-stats {
+    gap: 1.5rem;
+  }
+
+  .stat {
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+
+  .stat h3 {
+    font-size: 2rem;
+  }
+
+  .stat p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Tablet (481px - 768px) */
+@media (481px) and (max-width: 768px) {
+  .about {
+    padding: 50px 1.5rem;
+  }
+
+  .about h2 {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .about-content {
+    gap: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .about-stats {
+    gap: 1.8rem;
+  }
+
+  .stat {
+    padding: 2rem;
+  }
+
+  .stat h3 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Laptop (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about {
+    padding: 80px 2rem;
+  }
+
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .about-content {
+    gap: 3rem;
+  }
+
+  .about-text p {
+    font-size: 1.05rem;
+  }
+
+  .stat {
+    padding: 2rem;
+  }
+
+  .stat h3 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Desktop/PC (1025px and above) */
+@media (min-width: 1025px) {
+  .about {
+    padding: 100px 2rem;
+  }
+
+  .about h2 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .about-content {
+    gap: 4rem;
+  }
+
+  .about-text p {
+    font-size: 1.1rem;
+  }
+
+  .stat {
+    padding: 2.5rem;
+  }
+
+  .stat h3 {
+    font-size: 3rem;
+  }
+}
