@@ -1,6 +1,6 @@
 .skills {
-  padding: 80px 2rem;
-  background-color: #1a1a1a;
+  padding: 100px 2rem;
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
   color: white;
 }
 
@@ -10,29 +10,44 @@
 }
 
 .skills h2 {
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
+  font-size: 3rem;
+  margin-bottom: 4rem;
   text-align: center;
-  color: #646cff;
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  letter-spacing: -1px;
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
 }
 
 .skill-category {
-  background-color: #2a2a2a;
-  padding: 2rem;
-  border-radius: 8px;
-  border-left: 4px solid #646cff;
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  border-left: 4px solid #60a5fa;
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  border-color: rgba(96, 165, 250, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(96, 165, 250, 0.1);
 }
 
 .skill-category h3 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #646cff;
+  color: #60a5fa;
+  font-weight: 600;
 }
 
 .skill-category ul {
@@ -40,17 +55,18 @@
 }
 
 .skill-category li {
-  padding: 0.5rem 0;
-  color: #ccc;
+  padding: 0.65rem 0;
+  color: #cbd5e1;
   display: flex;
   align-items: center;
+  font-weight: 400;
 }
 
 .skill-category li:before {
   content: "✓";
   margin-right: 0.75rem;
-  color: #646cff;
-  font-weight: bold;
+  color: #60a5fa;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
